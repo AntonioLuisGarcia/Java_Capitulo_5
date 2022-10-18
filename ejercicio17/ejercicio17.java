@@ -16,6 +16,7 @@ public class ejercicio17{
         if(i<104){
             System.out.print("el total es "+(total+numero));
         }
-		sc.close();
+	
+        sc.close();
 	}
 }
