@@ -11,6 +11,13 @@ public class eje31{
         System.out.print("Diga la altura:");
         int altura=sc.nextInt();
         
+        for(int i=1;i<altura;i++){
+            System.out.println("*");
+        }
+        
+        for(int j=1;j<=altura/2;j++){
+            System.out.print("* ");
+        }
         
 		sc.close();
 	}
