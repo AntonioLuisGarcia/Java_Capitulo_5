@@ -10,7 +10,24 @@ public class eje32{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
         System.out.println("Este programa dira la suma de los numeros pares que tiene un numero dado por teclado");
-        int numero= sc.nextInt();
+        System.out.println("Introduzca el numero");
+        long numero= sc.nextLong();
+		long volteado=0;
+		int total=0;
+		System.out.print("Los numeros pares son: ");
+		while(numero>=1){
+			volteado=(volteado*10)+numero%10;
+			numero /=10;
+		}
+		while(volteado>=1){
+			if((volteado%10)%2==0){
+				System.out.print(volteado%10+" ");
+				total=total+ (int)(volteado%10);
+			}
+			volteado /=10;
+		}
+		System.out.println();
+		System.out.print("La suma de los numeros pares es de: "+total);
        
         
 		sc.close();
