@@ -28,7 +28,6 @@ public class eje35{
 
         }
 
-    //    System.out.println(" ");
 
         for(int i=1;i<=altura;i++){
 
