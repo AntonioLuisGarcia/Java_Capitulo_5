@@ -60,6 +60,8 @@ public class eje38{
                 System.out.println("");
             }
 
+        }else{
+            System.out.println("Error");
         }
         sc.close();
         }

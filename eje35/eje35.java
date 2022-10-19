@@ -53,8 +53,6 @@ public class eje35{
             g=i-1;
             System.out.println("");
         }
-
-
         sc.close();
         }
 }
