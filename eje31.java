@@ -15,7 +15,7 @@ public class eje31{
             System.out.println("*");
         }
         
-        for(int j=1;j<=altura/2;j++){
+        for(int j=1;j<=altura/2+1;j++){
             System.out.print("* ");
         }
         
