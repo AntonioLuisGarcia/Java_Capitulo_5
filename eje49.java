@@ -12,6 +12,7 @@ public class eje49{
         System.out.println("Introduce numeros, se acaba cuando introduzcas un numero primo ");
         
         boolean noprimo=true;
+        boolean seguir=true;
         int contador=0;
         int total=0;
         int max=0;
@@ -22,9 +23,9 @@ public class eje49{
             System.out.println("Diga un numero ");
             int numero=sc.nextInt();
 
-            for(int i=2;i<numero;i++){
-                if(numero%i!=0){
-                    noprimo=false;
+            for(int i=2;i<numero/2;i++){
+                if(numero%i==0){
+                    seguir=true;
                     break;
                 }
             }
@@ -40,9 +41,9 @@ public class eje49{
                 }
             }
         }
-        System.out.print("Has metido "+contador+" numeros primos");
-        System.out.print("La media es "+total/contador);
-        System.out.print("El numero maximo es "+max);
+        System.out.println("Has metido "+contador+" numeros primos");
+        System.out.println("La media es "+total/contador);
+        System.out.println("El numero maximo es "+max);
         System.out.print("El numero minimo es "+min);
 
         sc.close();
