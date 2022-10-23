@@ -9,42 +9,41 @@ import java.util.Scanner;
 public class eje49{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce numeros, se acaba cuando introduzcas un numero primo ");
-        
-        boolean noprimo=true;
-        boolean seguir=true;
-        int contador=0;
-        int total=0;
-        int max=0;
-        int min=1264983232;
-        
-        while(noprimo){
-
-            System.out.println("Diga un numero ");
-            int numero=sc.nextInt();
-
-            for(int i=2;i<numero/2;i++){
-                if(numero%i==0){
-                    seguir=true;
-                    break;
-                }
+        System.out.println("Por favor, vaya introduciendo números enteros positivos. ");
+        System.out.println("Para terminar, introduzca un número primo:");
+        int numero;
+        int suma = 0;
+        int cuentaNumeros = 0;
+        int maximo = Integer.MIN_VALUE;
+        int minimo = Integer.MAX_VALUE;
+        boolean esPrimo;
+    
+        do {
+          numero = Integer.parseInt(sc.nextLine());
+    
+          // comprueba si el número introducido es primo
+          esPrimo = true;
+          for (int i = 2; i < numero; i++) {
+            if ((numero % i) == 0) {
+              esPrimo = false;
             }
-            if(noprimo){
-                System.out.println(numero);
-                contador++;
-                total=total+numero;
-                if(numero>max){
-                    max=numero;
-                }
-                if(numero<min){
-                    min=numero;
-                }
-            }
-        }
-        System.out.println("Has metido "+contador+" numeros primos");
-        System.out.println("La media es "+total/contador);
-        System.out.println("El numero maximo es "+max);
-        System.out.print("El numero minimo es "+min);
+          }
+          
+          // si no es primo, se contabiliza
+          if (!esPrimo) {
+            suma += numero;
+            cuentaNumeros++;
+            
+            maximo = numero > maximo ? numero : maximo;
+            minimo = numero < minimo ? numero : minimo;
+          }
+          
+        } while (!esPrimo);
+        
+        System.out.println("Ha introducido " + cuentaNumeros + " números no primos.");
+        System.out.println("Máximo: " + maximo);
+        System.out.println("Mínimo: " + minimo);
+        System.out.println("Media: " + (double)suma / cuentaNumeros);
 
         sc.close();
         }
