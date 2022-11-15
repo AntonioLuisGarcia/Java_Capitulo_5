@@ -38,7 +38,8 @@ public class piramideExtra{
             System.out.println("4. achicar");
             System.out.println("5. ponerla hueca");
             System.out.println("6. poner huecos,tiene que ser la altura impar");
-            System.out.println("7. acabar");
+            System.out.println("7. Volver a rellenar");
+            System.out.println("8. acabar");
             decision=sc.nextInt();
 
             switch(decision){
@@ -650,7 +651,32 @@ public class piramideExtra{
 
                 break;
 
+
                 case 7:
+
+                    contador5=0;
+                    contador6=0;
+
+                    for(int i=1;i<=altura+aumento;i++){
+
+                        for(int j=1;j<=espacios_izquierda;j++){
+                            System.out.print(" ");
+                        }
+                        
+                        for(int j=altura+aumento;j>=i;j--){
+                            System.out.print(" ");
+                        }
+            
+                        for(int j=1;j<=i*2-1;j++){
+                            System.out.print(caracter);
+                        }
+                        System.out.println();
+                    }
+
+                break;
+
+
+                case 8:
                     salir=true;
                     System.out.println("Has salido");
                 break;
