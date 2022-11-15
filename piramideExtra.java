@@ -4,8 +4,9 @@ public class piramideExtra{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
         System.out.println("Diga la altura");
+
         int altura = sc.nextInt();
-        String nombre;
+        String caracter;
         int decision;
         int espacios_izquierda=0;
         boolean salir=false;
@@ -15,7 +16,7 @@ public class piramideExtra{
 
 
         System.out.print("que caracter quieres para la piramide ");
-        nombre=sc.next();
+        caracter=sc.next();
       
         for(int i=1;i<=altura;i++){
 
@@ -24,7 +25,7 @@ public class piramideExtra{
             }
 
             for(int j=1;j<=i*2-1;j++){
-                System.out.print(nombre);
+                System.out.print(caracter);
             }
             System.out.println();
         }
@@ -57,7 +58,7 @@ public class piramideExtra{
                             }
                 
                             for(int j=1;j<=i*2-1;j++){
-                                System.out.print(nombre);
+                                System.out.print(caracter);
                             }
                             System.out.println();
                         }
@@ -75,7 +76,7 @@ public class piramideExtra{
                                 System.out.print(" ");
                             }
                 
-                            System.out.print(nombre);
+                            System.out.print(caracter);
 
                             if(i!=altura+aumento){
 
@@ -89,13 +90,13 @@ public class piramideExtra{
 
                                 for(int j=1;j<=i*2-3;j++){
 
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
 
                                 } 
                             }
 
                             if(i!=1){
-                                System.out.print(nombre);
+                                System.out.print(caracter);
                             }
                             System.out.println();
 
@@ -114,7 +115,7 @@ public class piramideExtra{
                             }
                 
                             for(int j=1;j<=i*2-1;j++){
-                                System.out.print(nombre);
+                                System.out.print(caracter);
                             }
                             System.out.println();
                         }
@@ -136,7 +137,7 @@ public class piramideExtra{
                                     System.out.print(" ");
                                 }
                     
-                                System.out.print(nombre);
+                                System.out.print(caracter);
     
                                 if(i%2==0){
     
@@ -150,13 +151,13 @@ public class piramideExtra{
     
                                     for(int j=1;j<=i*2-3;j++){
     
-                                        System.out.print(nombre);
+                                        System.out.print(caracter);
     
                                     } 
                                 }
     
                                 if(i!=1){
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
                                 }
                                 System.out.println();
                             }
@@ -185,7 +186,7 @@ public class piramideExtra{
                                 }
                     
                                 for(int j=1;j<=i*2-1;j++){
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
                                 }
                                 System.out.println();
                             }
@@ -203,7 +204,7 @@ public class piramideExtra{
                                     System.out.print(" ");
                                 }
                     
-                                System.out.print(nombre);
+                                System.out.print(caracter);
     
                                 if(i!=altura+aumento){
     
@@ -217,13 +218,13 @@ public class piramideExtra{
     
                                     for(int j=1;j<=i*2-3;j++){
     
-                                        System.out.print(nombre);
+                                        System.out.print(caracter);
     
                                     } 
                                 }
     
                                 if(i!=1){
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
                                 }
                                 System.out.println();
     
@@ -242,7 +243,7 @@ public class piramideExtra{
                                 }
                     
                                 for(int j=1;j<=i*2-1;j++){
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
                                 }
                                 System.out.println();
                             }
@@ -264,7 +265,7 @@ public class piramideExtra{
                                         System.out.print(" ");
                                     }
                         
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
         
                                     if(i%2==0){
         
@@ -278,13 +279,13 @@ public class piramideExtra{
         
                                         for(int j=1;j<=i*2-3;j++){
         
-                                            System.out.print(nombre);
+                                            System.out.print(caracter);
         
                                         } 
                                     }
         
                                     if(i!=1){
-                                        System.out.print(nombre);
+                                        System.out.print(caracter);
                                     }
                                     System.out.println();
                                 }
@@ -315,7 +316,7 @@ public class piramideExtra{
                             }
                 
                             for(int j=1;j<=i*2-1;j++){
-                                System.out.print(nombre);
+                                System.out.print(caracter);
                             }
                             System.out.println();
                         }
@@ -333,7 +334,7 @@ public class piramideExtra{
                                 System.out.print(" ");
                             }
                 
-                            System.out.print(nombre);
+                            System.out.print(caracter);
 
                             if(i!=altura+aumento){
 
@@ -347,13 +348,13 @@ public class piramideExtra{
 
                                 for(int j=1;j<=i*2-3;j++){
 
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
 
                                 } 
                             }
 
                             if(i!=1){
-                                System.out.print(nombre);
+                                System.out.print(caracter);
                             }
                             System.out.println();
 
@@ -372,7 +373,7 @@ public class piramideExtra{
                             }
                 
                             for(int j=1;j<=i*2-1;j++){
-                                System.out.print(nombre);
+                                System.out.print(caracter);
                             }
                             System.out.println();
                         }
@@ -394,7 +395,7 @@ public class piramideExtra{
                                     System.out.print(" ");
                                 }
                     
-                                System.out.print(nombre);
+                                System.out.print(caracter);
     
                                 if(i%2==0){
     
@@ -408,13 +409,13 @@ public class piramideExtra{
     
                                     for(int j=1;j<=i*2-3;j++){
     
-                                        System.out.print(nombre);
+                                        System.out.print(caracter);
     
                                     } 
                                 }
     
                                 if(i!=1){
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
                                 }
                                 System.out.println();
                             }
@@ -444,7 +445,7 @@ public class piramideExtra{
                             }
                 
                             for(int j=1;j<=i*2-1;j++){
-                                System.out.print(nombre);
+                                System.out.print(caracter);
                             }
                             System.out.println();
                         }
@@ -462,7 +463,7 @@ public class piramideExtra{
                                     System.out.print(" ");
                                 }
                     
-                                System.out.print(nombre);
+                                System.out.print(caracter);
 
                                 if(i!=altura+aumento){
 
@@ -476,13 +477,13 @@ public class piramideExtra{
 
                                     for(int j=1;j<=i*2-3;j++){
 
-                                        System.out.print(nombre);
+                                        System.out.print(caracter);
 
                                     } 
                                 }
 
                                 if(i!=1){
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
                                 }
                                 System.out.println();
 
@@ -501,7 +502,7 @@ public class piramideExtra{
                                 }
                     
                                 for(int j=1;j<=i*2-1;j++){
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
                                 }
                                 System.out.println();
                             }
@@ -523,7 +524,7 @@ public class piramideExtra{
                                         System.out.print(" ");
                                     }
                         
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
         
                                     if(i%2==0){
         
@@ -537,13 +538,13 @@ public class piramideExtra{
         
                                         for(int j=1;j<=i*2-3;j++){
         
-                                            System.out.print(nombre);
+                                            System.out.print(caracter);
         
                                         } 
                                     }
         
                                     if(i!=1){
-                                        System.out.print(nombre);
+                                        System.out.print(caracter);
                                     }
                                     System.out.println();
                                 }
@@ -574,7 +575,7 @@ public class piramideExtra{
                                 System.out.print(" ");
                             }
                 
-                            System.out.print(nombre);
+                            System.out.print(caracter);
 
                             if(i!=altura+aumento){
 
@@ -588,13 +589,13 @@ public class piramideExtra{
 
                                 for(int j=1;j<=i*2-3;j++){
 
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
 
                                 } 
                             }
 
                             if(i!=1){
-                                System.out.print(nombre);
+                                System.out.print(caracter);
                             }
                             System.out.println();
                         }
@@ -620,7 +621,7 @@ public class piramideExtra{
                                 System.out.print(" ");
                             }
                 
-                            System.out.print(nombre);
+                            System.out.print(caracter);
 
                             if(i%2==0){
 
@@ -634,13 +635,13 @@ public class piramideExtra{
 
                                 for(int j=1;j<=i*2-3;j++){
 
-                                    System.out.print(nombre);
+                                    System.out.print(caracter);
 
                                 } 
                             }
 
                             if(i!=1){
-                                System.out.print(nombre);
+                                System.out.print(caracter);
                             }
                             System.out.println();
                         }
