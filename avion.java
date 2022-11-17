@@ -15,7 +15,7 @@ public class avion{
 
         for(int i=1;i<=altura/2;i++){
             for(int j=1;j<=i;j++){
-                System.out.print("*");
+                System.out.print("* ");
             }
             System.out.println();
         }
@@ -25,16 +25,16 @@ public class avion{
             for(int j=1;j<=ancho;j++){
                 if(i!=1 && i!=altura/2){
                     if(j>=eleccion1 && j<=eleccion2){
-                        System.out.print(" ");
+                        System.out.print("  ");
                     }else{
-                        System.out.print("*");
+                        System.out.print("* ");
                     }
                 }else{
-                    System.out.print("*");
+                    System.out.print("* ");
                 }
                 if(j>=ancho*3/4){
                     for(int k=1;k<=i;k++){
-                        System.out.print("**");
+                        System.out.print("* *");
                     }
                     break;
                 }
