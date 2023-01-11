@@ -12,8 +12,6 @@ public class cuadradoPiramide{
 
         int aumento=1;
 
-        int ladoMitad=lado/2-1;
-
 
 
         for(int i=1;i<=lado;i++){
